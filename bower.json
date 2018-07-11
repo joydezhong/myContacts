@@ -1,0 +1,27 @@
+{
+  "name": "myapp",
+  "version": "0.0.0",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "bootstrap": "~3.3.2",
+    "angular": "~1.5.8",
+    "fontawesome": "~4.2.0",
+    "angular-ui-router": "~1.0.18",
+    "angular-ui-bootstrap": "~2.5.0"
+  },
+  "authors": [
+    "zwp <1347034022@qq.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "/public/bower_components",
+    "test",
+    "tests"
+  ]
+}

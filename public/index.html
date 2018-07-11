@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="UTF-8"/>
+    <base href='/'/>
+    <title>Contact List App</title>
+
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel='stylesheet' type="text/css" href='stylesheets/style.css'/>
+
+</head>
+<body>
+<div class="container" ng-controller="AppCtrl">
+    <h1>Contact List App</h1>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Number</th>
+            <th>Role</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><input type="text" class="form-control" ng-model="contact.name"></td>
+            <td><input type="email" class="form-control" ng-model="contact.email"></td>
+            <td><input type="number" class="form-control" ng-model="contact.number"></td>
+            <td><input type="text" class="form-control" ng-model="contact.role"></td>
+            <td><button class="btn btn-primary" ng-click="addContact()">Add Contact</button></td>
+            <td><button class="btn btn-info" ng-click="update()">Update</button></td>
+        </tr>
+        <tr ng-repeat="i in contactList">
+            <td>{{i.name}}</td>
+            <td>{{i.email}}</td>
+            <td>{{i.number}}</td>
+            <td>{{i.role}}</td>
+            <td><button class="btn btn-danger" ng-click="remove(i._id)">Remove</button></td>
+            <td><button class="btn btn-warning" ng-click="edit(i._id)">Edit</button></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/angular.js/1.5.8/angular.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.bootcss.com/angular-ui-router/1.0.18/angular-ui-router.min.js"></script>
+<script src="controllers/controller.js"></script>
+
+</body>
+</html>
