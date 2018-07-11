@@ -9,4 +9,4 @@ Mongodb+Express+Angular.js+node.js
 
 >启动：`npm start`或`nodemon`
 
-打开"http://localhost:3000/"访问
+打开"http://localhost:3000/" 访问
