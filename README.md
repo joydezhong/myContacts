@@ -8,3 +8,5 @@ Mongodb+Express+Angular.js+node.js
 需要本地安装mongodb，并建好contacts数据库和contactList集合。
 
 >启动：`npm start`或`nodemon`
+
+打开"http://localhost:3000/"访问
